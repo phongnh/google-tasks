@@ -27,7 +27,7 @@ module GoogleTasks
       @refresh_token = options[:refresh_token]
 		end
 
-    def exchange
+    def refresh
       options = {
         :client_id     => self.class.client_id,
         :client_secret => self.class.client_secret,
@@ -41,7 +41,7 @@ module GoogleTasks
       response
     end
 
-    def self.upgrade(code)
+    def self.exchange(code)
       options = {
 				:client_id     => client_id,
 				:client_secret => client_secret,
