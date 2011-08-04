@@ -1,11 +1,11 @@
-path = File.dirname(__FILE__)
+$:.push(File.dirname(__FILE__)
 require "rubygems"
 require "yaml"
 require "json"
 require "rest-client"
-require "#{path}/google_tasks/service"
-require "#{path}/google_tasks/task_list"
-require "#{path}/google_tasks/task"
+require "google_tasks/service"
+require "google_tasks/task_list"
+require "google_tasks/task"
 
 module GoogleTasks
 	BASE_URL           = "https://www.googleapis.com/tasks"
