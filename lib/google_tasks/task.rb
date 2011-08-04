@@ -1,5 +1,5 @@
 module GoogleTasks
-	class Task
-	end
+  class Task
+  end
 end
 
